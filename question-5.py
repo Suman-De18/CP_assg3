@@ -24,7 +24,7 @@ n_values = range(4, 101)
 dft_times = [time_dft(n) for n in n_values]
 fft_times = [time_fft(n) for n in n_values]
 
-# Make a plot
+
 import matplotlib.pyplot as plt
 plt.plot(n_values, dft_times, label="Direct Computation")
 plt.plot(n_values, fft_times, label="numpy.fft.fft")
